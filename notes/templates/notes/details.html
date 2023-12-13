@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<header>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
+    </head>
+    <title>Hello</title>
+</header>
+
+<body class="note-li">
+    <h1>Note Details</h1>
+    <h4>{{note.title }} </h4>
+    <h4>{{ note.text }} </h4>
+</body>
+
+</html>

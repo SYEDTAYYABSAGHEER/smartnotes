@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static  'css/style.css'%}" type="text/css" />
+    </head>
+<header>
+    <title>Hello</title>
+</header>
+
+<body>
+    <h1>Authorize</h1>
+    <ul >
+    {% for note in notes %}
+    <h2 class="note-li">{{note.title}}</h2>
+    {% endfor %}
+    </ul>
+</body>
+
+</html>
